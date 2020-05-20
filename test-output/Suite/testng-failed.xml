@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="none">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="steps.CT01"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)" parallel="none">
+    <classes>
+      <class name="steps.CT01">
+        <methods>
+          <include name="tearDown"/>
+          <include name="clicar_em_comprar"/>
+          <include name="produto_adicionado_ao_carrinho"/>
+          <include name="que_ao_acessar_o_sistema"/>
+          <include name="acessar_o_produto"/>
+          <include name="pesquisar_o_produto"/>
+        </methods>
+      </class> <!-- steps.CT01 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
